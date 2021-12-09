@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1 class="display-1">基礎編</h1>
+      <hr />
+      <p class="lead">
+        できるだけ今日学んだ範囲で記述しましょう。
+      </p>
+      <div class="container">
+        <h1 class="display-3">Q1</h1>
+        <p class="lead">
+          ランダムに生成された自然数の配列を、偶数、奇数、素数に分類するプログラムを考えましょう。
+        </p>
+        <div class="alert alert-success" role="alert">
+          ランダムな自然数を生成する関数はこちらでご用意します。
+        </div>
+        <div class="alert alert-primary" role="hint">
+          ２で割った余りが0であれば偶数、1ならば奇数です。
+          余りの計算には、剰余演算子（%）を使います（modとかはないです）。
+        </div>
+        <div class="alert alert-primary" role="hint">
+          素数とは、１より大きい自然数で、１と自分自身でしか割り切れない自然数のことです。
+        </div>
+        <p class="lead">
+          結果は配列に格納しましょう。
+        </p>
+      </div>
+      <div class="container">
+        <h1 class="display-3">Q2</h1>
+        <p class="lead">
+          任意の自然数を素因数分解するプログラムを考えましょう。
+          素因数分解とは、ある自然数を素数の積の形で表すことです。
+        </p>
+        <div class="alert alert-success" role="alert">
+          例1）　60 = 2 * 2 * 3 * 5 = 2^2 * 3 * 5<br />
+          例2）　210 = 2 * 3 * 5 * 7
+        </div>
+        <div class="alert alert-danger" role="alert">
+          桁数が多いと大変なことになるので1000くらいまでにしましょう
+          （それぐらいなら暗算できることは言わない）。
+        </div>
+        <div class="alert alert-primary" role="hint">
+          算数が得意な人はある数の平方根を知りたいと思うかもしれません。こちらで求められます（切り上げ）。<br />
+          <code>Math.ceil(Math.sqrt([平方根を知りたい数]))</code>
+        </div>
+        <p class="lead">
+          こちらも結果は配列に格納しましょう。
+        </p>
+      </div>
+      <div class="container">
+        <h1 class="display-3">Q3</h1>
+        <p class="lead">
+          【おまけです】<br />
+          Q2で作ったプログラムを、Q1で使ったランダムな自然数配列に適用してみましょう。<br />
+          また、2〜１０００までの自然数の中で一番因数の多い数は何か探してみましょう。
+        </p>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
